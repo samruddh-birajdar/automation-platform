@@ -2,7 +2,7 @@
 
 An industry-level, event-driven automation platform built to handle business workflows across different systems. This project replaces scattered automation scripts and low-code workflows with one reliable, self-hosted backend.
 
-![System Architecture](./architecture.png)
+!\[System Architecture\](./architecture.png)|![System Architecture](./Automation-Backend/docs/Architecture.png)
 
 ## 🚀 Features
 - **Webhook Ingestion:** Receives events from external providers (Stripe, Shopify) with signature verification.
@@ -134,6 +134,7 @@ cd ~/Documents/Python/Automations/Automation-Platform
 git add .
 git commit -m "docs: add comprehensive README with architecture and design patterns"
 git push
+```
 
 ## 📸 Screenshots
 ![Dashboard](screenshots/CreatingWorkflow.png)
