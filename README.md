@@ -135,3 +135,8 @@ git add .
 git commit -m "docs: add comprehensive README with architecture and design patterns"
 git push
 
+## 📸 Screenshots
+![Dashboard](screenshots/CreatingWorkflow.png)
+![Stripe](screenshots/CardPayment.png)
+![Live Logs](screenshots/AutomatedWorkflow.png)
+![Render](screenshots/Render_Testing.png)
