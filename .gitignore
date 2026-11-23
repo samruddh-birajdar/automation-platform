@@ -6,3 +6,6 @@ __pycache__/
 dist/
 .DS_Store
 Automation-Backend/.env.docker
+Automation-Backend/credentials.json
+Automation-Backend/token.json
+Automation-Backend/wipe_db.py
