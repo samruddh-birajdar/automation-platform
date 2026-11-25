@@ -1,8 +1,9 @@
 // App.jsx  (save as frontend/src/App.jsx)
 import { Fragment, useEffect, useState, useCallback } from 'react';
 import api from './api';
-import { Plus, Trash2, Play, Activity, X, CreditCard, Loader2, ScrollText, Workflow } from 'lucide-react';
+import { Plus, Trash2, Play, Activity, X, CreditCard, Loader2, ScrollText, Workflow, GitBranch } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom'; // <-- Added
 
 /* ---------- shared styles ---------- */
 const btn =
@@ -77,6 +78,8 @@ function App() {
   const [payingId, setPayingId] = useState(null);
   const [runningId, setRunningId] = useState(null);
   const [deleteTarget, setDeleteTarget] = useState(null);
+
+  const navigate = useNavigate(); // <-- Added
 
   const fetchWorkflows = useCallback(async () => {
     try {
@@ -370,6 +373,17 @@ function App() {
                 {payingId === wf.id ? <Loader2 size={16} className="animate-spin" /> : <CreditCard size={16} />}
                 Pay &amp; run
               </button>
+
+              {/* NEW: View Flow Button */}
+              <button
+                onClick={() => navigate('/flow')}
+                className={btnGhost}
+                title="View visual flow"
+              >
+                <GitBranch size={16} />
+                Flow
+              </button>
+
               <span className="ml-auto font-mono text-xs text-dim">#{wf.id}</span>
             </div>
           </article>

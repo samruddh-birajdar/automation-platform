@@ -6,3 +6,6 @@ __pycache__/
 dist/
 .DS_Store
 Automation-Backend/.env.docker
+credentials.json
+get_gmail_token.py
+wipe_db.py

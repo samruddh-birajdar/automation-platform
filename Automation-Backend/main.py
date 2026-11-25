@@ -42,3 +42,10 @@ app.include_router(checkout_router, prefix="/api/checkout", tags=["Checkout"])
 @app.get("/")
 def read_root():
     return {"status": "ok", "message": "Automation Backend is running"}
+
+@app.get("/wipe-db-please-remove-later")
+def wipe_db(db: Session = Depends(get_db)):
+    from sqlalchemy import text
+    db.execute(text("TRUNCATE TABLE events, workflows RESTART IDENTITY CASCADE;"))
+    db.commit()
+    return {"message": "Database wiped. IDs reset to 1."}
