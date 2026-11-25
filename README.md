@@ -1,4 +1,4 @@
-# ⚡ Advanced Automation Log Processing
+# ⚡ Advanced Automation Platform
 
 An industry-level, event-driven automation platform built to handle business workflows across different systems. This project replaces scattered automation scripts and low-code workflows with one reliable, self-hosted backend.
 
