@@ -2,7 +2,7 @@
 
 An industry-level, event-driven automation platform built to handle business workflows across different systems. This project replaces scattered automation scripts and low-code workflows with one reliable, self-hosted backend.
 
-![System Architecture](./Automation-Backend/docs/Architecture.svg)
+![System Architecture](./docs/Architecture.svg)
 
 ## 🚀 Features
 - **Webhook Ingestion:** Receives events from external providers (Stripe, Shopify) with signature verification.
@@ -137,7 +137,7 @@ git push
 ```
 
 ## 📸 Screenshots
-![Dashboard](screenshots/CreatingWorkflow.png)
-![Stripe](screenshots/CardPayment.png)
-![Live Logs](screenshots/AutomatedWorkflow.png)
-![Render](screenshots/Render_Testing.png)
+![Dashboard](docs/CreatingWorkflow.png)
+![Stripe](docs/CardPayment.png)
+![Live Logs](docs/AutomatedWorkflow.png)
+![Render](docs/Render_Testing.png)
