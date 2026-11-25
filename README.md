@@ -1,8 +1,8 @@
-# ⚡ Advanced Automation Backend Engine
+# ⚡ Advanced Automation Log Processing
 
 An industry-level, event-driven automation platform built to handle business workflows across different systems. This project replaces scattered automation scripts and low-code workflows with one reliable, self-hosted backend.
 
-!\[System Architecture\](./architecture.png)|![System Architecture](./Automation-Backend/docs/Architecture.png)
+![System Architecture](./Automation-Backend/docs/Architecture.png)
 
 ## 🚀 Features
 - **Webhook Ingestion:** Receives events from external providers (Stripe, Shopify) with signature verification.
